@@ -1,6 +1,9 @@
 package com.restsample.resources;
 
 import javax.xml.bind.annotation.XmlRootElement;
+/*
+ * 
+ */
 
 @XmlRootElement
 public class BookInfo {
@@ -45,6 +48,6 @@ public class BookInfo {
 	public void setIsbnNo(String isbnNo) {
 		this.isbnNo = isbnNo;
 	}
-	
+
 	
 }

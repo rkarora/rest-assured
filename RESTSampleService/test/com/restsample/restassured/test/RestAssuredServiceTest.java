@@ -13,9 +13,6 @@ import com.jayway.restassured.path.json.JsonPath;
 import com.jayway.restassured.response.Response;
 
 public class RestAssuredServiceTest {
-
-
-
 	/*
 	 * Get status of book service 
 	 */
@@ -25,16 +22,13 @@ public class RestAssuredServiceTest {
 		.body(equalTo("Service is Running")).when().get("/RESTSampleService/restSample/books/status");
 
 	}
-	
 	/*
 	 * Hello world! from book service 
 	 */
-	
 	@Test
 	public void getHelloWorld() {
 		expect().statusCode(200)
 		.body(equalTo("Hello world!")).when().get("/RESTSampleService/restSample/books/hello");
-
 	}	
 	/*
 	 * get first book name as a JSON
